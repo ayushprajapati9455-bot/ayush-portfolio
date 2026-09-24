@@ -166,24 +166,15 @@ let currentImage = 0;
 const projectImages = {
 
     amazon: {
-
         title: "Amazon Clone",
-
         images: [
-
             "images/amazon-clone/home.jpg",
-
-            "images/amazon-clone/login.jpg",
-
-            "images/amazon-clone/product.jpg",
-
-            "images/amazon-clone/cart.jpg",
-
-            "images/amazon-clone/checkout.jpg"
-
+            "images/amazon-clone/product-1.jpg",
+            "images/amazon-clone/product-2.jpg"
         ]
-
     },
+
+    // baaki projects...
 
 
     bookstore: {
@@ -192,7 +183,13 @@ const projectImages = {
 
         images: [
 
-            "images/book-store/home.jpg",
+            "images/book-store/home-1.jpg",
+
+            "images/book-store/home-2.jpg",
+
+            "images/book-store/home-3.jpg",
+
+            "images/book-store/home-4.jpg",
 
             "images/book-store/login.jpg",
 
@@ -200,15 +197,23 @@ const projectImages = {
 
             "images/book-store/catalogue.jpg",
 
-            "images/book-store/cse-books.jpg",
+            "images/book-store/civil.jpg",
 
-            "images/book-store/ece-books.jpg",
+            "images/book-store/me.jpg",
 
-            "images/book-store/eee-books.jpg",
+            "images/book-store/cse.jpg",
 
-            "images/book-store/me-books.jpg",
+            "images/book-store/cse-ai-ml.jpg",
+            
+            "images/book-store/ece.jpg",
+            
+            "images/book-store/eee.jpg",
 
-            "images/book-store/cart.jpg"
+            "images/book-store/cart-1.jpg",
+
+            "images/book-store/cart-2.jpg",
+
+            "images/book-store/cart-3.jpg"
 
         ]
 
@@ -222,10 +227,6 @@ const projectImages = {
         images: [
 
             "images/registration-form/form.jpg",
-
-            "images/registration-form/validation.jpg",
-
-            "images/registration-form/success.jpg"
 
         ]
 
@@ -379,7 +380,7 @@ const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function (event) {
 
         event.preventDefault();
 
@@ -434,7 +435,7 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
-    // Close mobile menu when clicking outside
+// Close mobile menu when clicking outside
 
 document.addEventListener("click", function (event) {
 
