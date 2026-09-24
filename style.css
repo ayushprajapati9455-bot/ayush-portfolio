@@ -1,0 +1,1276 @@
+/* =========================================================
+   AYUSH PRAJAPATI - PORTFOLIO
+   CLEAN & ORGANIZED STYLE SHEET
+   ========================================================= */
+
+/* =========================
+   1. RESET & GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+/* =========================
+   2. HEADER & NAVIGATION
+========================= */
+
+header {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+nav ul li a.active-link {
+    color: #38bdf8;
+    font-weight: 700;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* =========================
+   3. THEME BUTTON
+========================= */
+
+#theme-btn {
+    width: 52px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background: #ffffff;
+    color: #111827;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-btn:hover {
+    transform: scale(1.08);
+    background: #e5e7eb;
+}
+
+/* =========================
+   4. HOME
+========================= */
+
+.home {
+    min-height: 90vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    color: #555;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    color: #111827;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+.home-content p {
+    max-width: 600px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #2563eb;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.home-content .btn {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* =========================
+   5. COMMON BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   6. COMMON SECTION
+========================= */
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+section > h2 {
+    font-size: 35px;
+    color: #111827;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+section > h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #2563eb;
+    margin: 10px auto;
+}
+
+/* =========================
+   7. ABOUT
+========================= */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-content {
+    width: 100%;
+}
+
+#about p,
+.about-content p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* =========================
+   8. SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #2563eb;
+    color: white;
+}
+
+/* =========================
+   9. EDUCATION
+========================= */
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.education-box {
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 5px solid #2563eb;
+}
+
+.education-box h3 {
+    color: #2563eb;
+}
+
+/* =========================
+   10. PROJECTS
+========================= */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Main project-card design */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin: 20px 20px 10px;
+    color: #111827;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0 20px 18px;
+}
+
+/* Compatibility for older project-box markup */
+.project-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+}
+
+.project-box h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    color: #555;
+}
+
+/* Project image wrapper */
+.project-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.project-box:hover .project-image img {
+    transform: scale(1.08);
+}
+
+/* Technologies */
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.technologies span {
+    background: #e0e7ff;
+    color: #2563eb;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Project buttons */
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px 20px;
+}
+
+.project-buttons .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.project-buttons .btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+.project-buttons button.btn {
+    font-family: inherit;
+}
+
+.demo-btn {
+    background: #111827 !important;
+}
+
+.demo-btn:hover {
+    background: #374151 !important;
+}
+
+/* =========================
+   11. CERTIFICATES
+========================= */
+
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-box {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-box h3 {
+    color: #2563eb;
+}
+
+.certificate-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =========================
+   12. RESUME
+========================= */
+
+#resume {
+    background: #ffffff;
+    color: #111827;
+    text-align: center;
+    padding: 70px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+#resume h2 {
+    color: #111827;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#resume p {
+    color: #4b5563;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#resume .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#resume .btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   13. CONTACT
+========================= */
+
+#contact {
+    padding: 70px 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    font-size: 18px;
+}
+
+.contact-item p {
+    margin-top: 5px;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label,
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form textarea,
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+/* =========================
+   14. SCREENSHOT GALLERY
+========================= */
+
+.gallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.gallery-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.gallery-content h2 {
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+#gallery-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    color: #111827;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.gallery-controls button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.gallery-controls button:hover {
+    background: #1d4ed8;
+}
+
+#image-number {
+    font-weight: bold;
+    color: #374151;
+}
+
+/* =========================
+   15. FOOTER
+========================= */
+
+.footer {
+    background: #111827;
+    color: white;
+    padding: 45px 20px 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    background: #2563eb;
+    padding: 9px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.footer .copyright {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* =========================
+   16. BACK TO TOP
+========================= */
+
+#top-btn {
+    display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* =========================
+   17. DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: #020617;
+}
+
+body.dark-mode section > h2,
+body.dark-mode .home-content h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .home-content p,
+body.dark-mode #about p,
+body.dark-mode .about-content p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .skill,
+body.dark-mode .project-box,
+body.dark-mode .education-box,
+body.dark-mode .certificate-box,
+body.dark-mode .project-card {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+body.dark-mode .project-box p,
+body.dark-mode .project-card p,
+body.dark-mode .education-box p,
+body.dark-mode .certificate-box p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .project-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .technologies span {
+    background: #334155;
+    color: #93c5fd;
+}
+
+body.dark-mode .project-buttons .btn {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+body.dark-mode .project-buttons .btn:hover {
+    background: #3b82f6;
+}
+
+body.dark-mode #resume {
+    background: #111827;
+    color: #ffffff;
+}
+
+body.dark-mode #resume h2 {
+    color: #ffffff;
+}
+
+body.dark-mode #resume p {
+    color: #d1d5db;
+}
+
+body.dark-mode .contact-info p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea,
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: #1e293b;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder,
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode #theme-btn {
+    background: #ffffff;
+    color: #111827;
+}
+
+body.dark-mode #theme-btn:hover {
+    background: #e5e7eb;
+}
+
+/* =========================
+   18. MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+        color: #ffffff;
+        background: #2563eb;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        font-size: 26px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 45px;
+        padding: 0;
+        z-index: 2000;
+    }
+
+    .menu-btn:hover {
+        background: #1d4ed8;
+    }
+
+    nav ul {
+        display: flex;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 10px 0;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px);
+        transition: opacity 0.3s ease,
+                    transform 0.3s ease,
+                    visibility 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        color: #111827;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        background: #f1f5f9;
+        color: #2563eb;
+    }
+
+    nav ul li a.active-link {
+        color: #2563eb;
+        background: #eff6ff;
+    }
+
+    body.dark-mode nav ul {
+        background: #111827;
+    }
+
+    body.dark-mode nav ul li a {
+        color: white;
+    }
+
+    body.dark-mode nav ul li a:hover {
+        background: #1f2937;
+        color: #38bdf8;
+    }
+
+    body.dark-mode nav ul li a.active-link {
+        color: #38bdf8;
+        background: #1f2937;
+    }
+
+    body.dark-mode .menu-btn {
+        color: #ffffff;
+        background: #2563eb;
+    }
+
+    /* Theme button */
+    #theme-btn {
+        width: 45px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    /* Home */
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 24px;
+    }
+
+    .home-content .btn {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    .home-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .home-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+    /* About */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Skills */
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .skill {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* Education */
+    .education-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .education-box {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .education-box h3 {
+        font-size: 20px;
+    }
+
+    .education-box p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Projects */
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .project-card,
+    .project-box {
+        width: 100%;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-card h3 {
+        font-size: 21px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .project-buttons {
+        justify-content: center;
+        padding: 0 15px 20px;
+    }
+
+    .project-buttons .btn {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    /* Certificates */
+    .certificate-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .certificate-box {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .certificate-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Resume */
+    #resume {
+        margin: 25px 15px;
+        padding: 50px 20px;
+        border-radius: 10px;
+    }
+
+    #resume h2 {
+        font-size: 30px;
+    }
+
+    #resume p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    #resume .btn {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 50px 20px;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        min-height: 150px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+    }
+
+    /* Gallery */
+    .gallery-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #gallery-image {
+        max-height: 350px;
+    }
+
+    .gallery-controls {
+        gap: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 35px 20px 20px;
+        margin-top: 35px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer h2 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-link {
+        padding: 8px 13px;
+        font-size: 13px;
+    }
+}
+
+/* =========================
+   19. SMALL MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .gallery-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #gallery-image {
+        max-height: 350px;
+    }
+
+    .gallery-controls {
+        gap: 10px;
+    }
+}

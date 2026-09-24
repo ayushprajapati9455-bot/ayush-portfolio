@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayush Prajapati | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     RESPONSIVE NAVBAR
+========================= -->
+
+<header>
+    <nav>
+
+        <h2 class="logo">Ayush.</h2>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="menu-btn">
+            ☰
+        </button>
+
+        <ul id="nav-menu">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#certificates">Certificates</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+        <!-- Dark / Light Mode -->
+        <button id="theme-btn">🌙</button>
+
+    </nav>
+</header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+
+        <div class="home-content">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Ayush Prajapati</h1>
+
+            <h2 id="typing-text">B.Tech CSE Student</h2>
+
+            <p>
+                I am a Computer Science Engineering student interested
+                in Web Development and Programming.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+
+        </div>
+
+        <div class="home-image">
+            <img src="images/profile.jpg" alt="Ayush Prajapati">
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a B.Tech Computer Science Engineering student.
+            I am learning web development and programming.
+            I enjoy creating websites and working on practical
+            projects to improve my technical skills.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">MS Office</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education-box">
+
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p>Dr. APJ Abdul Kalam Technical University</p>
+            <p>Currently Pursuing</p>
+
+        </div>
+
+        <div class="education-box">
+
+            <h3>Class 12th</h3>
+            <p>Percentage: 73.6%</p>
+
+        </div>
+
+        <div class="education-box">
+
+            <h3>Class 10th</h3>
+            <p>Percentage: 81%</p>
+
+        </div>
+
+    </section>
+
+
+   <!-- Projects Section -->
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <!-- =========================
+             PROJECT 1 - AMAZON CLONE
+        ========================== -->
+
+        <div class="project-box">
+
+            <div class="project-image">
+                <img src="images/amazon-clone.jpg"
+                     alt="Amazon Clone">
+            </div>
+
+            <h3>Amazon Clone</h3>
+
+            <p>
+                A responsive Amazon-inspired e-commerce website
+                developed using HTML and CSS.
+            </p>
+
+            <div class="technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="#"
+                   class="btn">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   class="btn demo-btn">
+                    Live Demo
+                </a>
+
+                <button class="btn screenshot-btn"
+                        onclick="openGallery('amazon')">
+                    View Screenshots
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             PROJECT 2 - BOOK STORE
+        ========================== -->
+
+        <div class="project-box">
+
+            <div class="project-image">
+                <img src="images/book-store.jpg"
+                     alt="Online Book Store">
+            </div>
+
+            <h3>Online Book Store</h3>
+
+            <p>
+                An online bookstore website containing different
+                branches, books and catalogue sections.
+            </p>
+
+            <div class="technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="#"
+                   class="btn">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   class="btn demo-btn">
+                    Live Demo
+                </a>
+
+                <button class="btn screenshot-btn"
+                        onclick="openGallery('bookstore')">
+                    View Screenshots
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             PROJECT 3 - REGISTRATION
+        ========================== -->
+
+        <div class="project-box">
+
+            <div class="project-image">
+                <img src="images/registration.jpg"
+                     alt="Registration Form">
+            </div>
+
+            <h3>Registration Form</h3>
+
+            <p>
+                A registration form with name, email, password,
+                mobile number and gender validation.
+            </p>
+
+            <div class="technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="#"
+                   class="btn">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   class="btn demo-btn">
+                    Live Demo
+                </a>
+
+                <button class="btn screenshot-btn"
+                        onclick="openGallery('registration')">
+                    View Screenshots
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+
+        <h2>Certificates</h2>
+
+        <div class="certificate-box">
+
+            <h3>ADCA</h3>
+
+            <p>
+                Advanced Diploma in Computer Applications
+            </p>
+
+        </div>
+
+
+        <div class="certificate-box">
+
+            <h3>CCC</h3>
+
+            <p>
+                Course on Computer Concepts
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Resume Section -->
+    <section id="resume">
+
+        <h2>My Resume</h2>
+
+        <p>
+            You can view or download my resume.
+        </p>
+
+        <a href="resume/resume.pdf" target="_blank" class="btn">
+            View Resume
+        </a>
+
+    </section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+
+            <p>
+                If you have any questions, project ideas, or opportunities,
+                feel free to contact me.
+            </p>
+
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <p>your-email@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <strong>📱 Phone</strong>
+                <p>+91 XXXXXXXXXX</p>
+            </div>
+
+            <div class="contact-item">
+                <strong>📍 Location</strong>
+                <p>Uttar Pradesh, India</p>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+
+            <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input
+                    type="text"
+                    id="contact-name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input
+                    type="email"
+                    id="contact-email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input
+                    type="text"
+                    id="contact-subject"
+                    placeholder="Enter subject"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                    id="contact-message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+  <!-- =========================
+     PROFESSIONAL FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>Ayush Prajapati</h2>
+
+        <p>
+            B.Tech CSE Student | Web Developer | Programmer
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://github.com/ayushprajapati9455-bot"
+               target="_blank"
+               class="social-link">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/ayush-prajapati-386b68389"
+               target="_blank"
+               class="social-link">
+                LinkedIn
+            </a>
+
+            <a href="mailto:ayushprajapati9455@gmail.com"
+               class="social-link">
+                Email
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Ayush Prajapati. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+    
+    <button id="top-btn">↑</button>
+    <!-- =========================
+     SCREENSHOT GALLERY
+========================= -->
+
+<div id="gallery" class="gallery">
+
+    <div class="gallery-content">
+
+        <!-- Close Button -->
+        <button class="close-btn"
+                onclick="closeGallery()">
+            &times;
+        </button>
+
+        <h2 id="gallery-title">
+            Project Screenshots
+        </h2>
+
+        <!-- Screenshot -->
+        <img id="gallery-image"
+             src=""
+             alt="Project Screenshot">
+
+        <!-- Gallery Controls -->
+        <div class="gallery-controls">
+
+            <button onclick="previousImage()">
+                ❮ Previous
+            </button>
+
+            <span id="image-number">
+                1 / 1
+            </span>
+
+            <button onclick="nextImage()">
+                Next ❯
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
